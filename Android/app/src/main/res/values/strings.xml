@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">Smart Suitcase</string>
+
+    <string name="empty">-</string>
+    <string name="value">Мән</string>
+    <string name="range">Ауқым</string>
+    <string name="sensor">Датчик</string>
+
+    <!-- Menu -->
+    <string name="menu_record">Жазба</string>
+    <string name="menu_settings">Параметрлер</string>
+    <string name="menu_sensors">Сенсорлар</string>
+    <string name="menu_controller">Контроллер</string>
+    <string name="menu_recordings">Жазбалар</string>
+    <string name="menu_start_stop">Бастау/Тоқтату</string>
+    <string name="controller_weight">Салмақ: %1$.2f кг</string>
+
+
+    <!-- Devices -->
+    <string name="devices_title">Табылған құрылғылар</string>
+    <string name="devices_bt_not_avail">Bluetooth қолжетімді емес</string>
+    <string name="devices_dev_not_found">Жұптастырылған Bluetooth құрылғылары табылмады</string>
+    <string name="devices_dialog_title">Қосылуда...</string>
+    <string name="devices_dialog_content">Өтінемін күте тұрыңыз!</string>
+
+    <!-- Controller -->
+    <string name="controller_title">Контроллер</string>
+    <string name="controller_reset_btn">Қалпына келтіру</string>
+    <string name="controller_error_db">Дерекқорды ашу қатесі</string>
+    <string name="controller_rec_on">Жазу: ҚОСУЛЫ</string>
+    <string name="controller_rec_off">Жазу: ӨШІРУЛІ</string>
+    <string name="controller_no_command">Ешқандай команда жазылмады</string>
+    <string name="controller_error_saving">Жазбаны сақтау қатесі</string>
+    <string name="controller_error_binding">Сұралған қызмет жоқ немесе бұл клиентке оған кіру рұқсаты жоқ</string>
+    <string name="controller_distance">%1$s CM</string>
+    <string name="controller_channel_name">Smart Suitcase</string>
+    <string name="controller_channel_description">Smart Suitcase смартфон контроллері</string>
+    <string name="controller_notification_title">Smart Suitcase туралы ескерту!</string>
+    <string name="controller_notification_title_weight">Жүктің салмағы артық</string>
+    <string name="controller_notification_content_weight">Жүктің салмағы 1 кг асып кетті</string>
+    <string name="controller_notification_content">%1$d рет кедергіден 10 см-ден аз қашықтық тіркелді.</string>
+
+    <!-- Settings -->
+
+    <string name="title_activity_settings">Параметрлер</string>
+    <string name="settings_title">Параметрлер</string>
+    <string name="settings_forward_comm">Алға пәрмені</string>
+    <string name="settings_right_comm">Оң команда</string>
+    <string name="settings_backward_comm">Артқа команда</string>
+    <string name="settings_left_comm">Сол жақ команда</string>
+    <string name="settings_info">*Мәнін өзгерту үшін сипаттаманың жанындағы элементті түртіңіз.</string>
+    <string name="settings_standard">Стандартты параметрлер</string>
+    <string name="settings_problem_list">Датчиктердің тізімін алу проблемалары</string>
+    <string name="settings_problem_standard">Жақындық сенсоры немесе ойынды айналдыру сенсоры табылмады</string>
+    <string name="settings_saved">Параметрлер жаңартылды</string>
+    <string name="settings_err1">Мин % және Макс % 1-ден кем немесе оған тең болуы керек</string>
+    <string name="settings_err2">Мин % макс. мәнінен кем немесе оған тең болуы керек</string>
+    <string name="settings_err3">Мән шектен тыс (мин: 0 - макс: 5)</string>
+
+    <string name="settings_dialog_close">ЖАБУ</string>
+    <string name="settings_dialog_val_desc">SensorEvent қайтарған мәндер жиымының орнын (мин 0 макс 5) таңдаңыз</string>
+    <string name="settings_dialog_range_desc">0 мен 1 арасындағы мәндерді енгізіңіз</string>
+
+    <!-- Sensors -->
+    <string name="sensors_title">Контроллер</string>
+    <string name="sensors_direction">Бағыт</string>
+    <string name="sensors_forward">Алға</string>
+    <string name="sensors_right">Оңға</string>
+    <string name="sensors_backward">Дұрыс</string>
+    <string name="sensors_left">Солға</string>
+    <string name="sensors_empty_range">- : -</string>
+    <string name="sensors_reset_btn">Ескерту есептегішін қалпына келтіріңіз</string>
+    <string name="sensors_reset_calibrations">Калибрлеулерді қалпына келтіру</string>
+    <string name="sensors_calibration_on">Калибрлеу: ҚОСУЛЫ</string>
+    <string name="sensors_calibration_off">Калибрлеу: ӨШІРУ</string>
+    <string name="sensors_rec_on">Жазу: ҚОСУЛЫ</string>
+    <string name="sensors_rec_off">Жазу: ӨШІРУЛІ</string>
+    <string name="sensors_problem_compat">Аппараттық үйлесімділік мәселесі</string>
+
+    <!-- Recordings -->
+    <string name="recordings_title">Жазбалар</string>
+    <string name="recordings_dialog_title">Жою</string>
+    <string name="recordings_dialog_content">Элементті жою %1$s?</string>
+    <string name="recordings_dialog_positive">ИӘ</string>
+    <string name="recordings_dialog_negative">ЖОҚ</string>
+    <string name="recordings_tot_duration">Жалпы ұзақтығы: %1$d секунд</string>
+    <string name="recordings_completed">Аяқталды</string>
+    <string name="title_activity_map">Map</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- Map -->
+
+    <string name="controller_map">Геопозиция</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+
+</resources>

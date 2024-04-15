@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.methk.robocar.Login">
+
+    <!-- Логотип -->
+
+    <!-- Поле ввода email -->
+
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="395dp"
+        android:layout_height="155dp"
+        android:layout_below="@+id/text_view"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/login" />
+
+    <EditText
+        android:id="@+id/email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Қолданушы email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
+
+    <!-- Поле ввода пароля -->
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Құпия сөз"
+        android:inputType="textPassword"
+        android:padding="12dp"/>
+
+    <!-- Кнопка входа -->
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Кіру"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"/>
+
+    <!-- Ссылка на регистрацию -->
+    <TextView
+        android:id="@+id/signup_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Есептік жазбаңыз жоқ па? Мұнда тіркеліңіз."
+        android:textColor="@android:color/black"
+        android:onClick="goToSignupActivity"/>
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/round_background"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="Жүйеге кіру"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

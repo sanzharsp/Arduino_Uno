@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context="com.methk.robocar.SignupActivity">
+    <!-- Заголовок "Регистрация" -->
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Қолданушыны тіркеу"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/round_background"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:layout_margin="16dp"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:lineSpacingExtra="8dp"/>
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="236dp"
+        android:layout_height="174dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/register" />
+
+    <EditText
+        android:id="@+id/email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Қолданушының email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Құпия сөз"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Тіркелу"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/login_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Есептік жазбаңыз бар ма? Мұнда кіріңіз."
+        android:onClick="goToLoginActivity"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>
