@@ -1,5 +1,6 @@
 package com.methk.robocar;
 
+import android.Manifest;
 import android.app.Service;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -8,13 +9,16 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
 import android.os.Binder;
 import android.os.Handler;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
-import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -65,7 +69,7 @@ public class BluetoothConnection extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        if(intent.hasExtra(Devices.EXTRA_ADDRESS)) {
+        if (intent.hasExtra(Devices.EXTRA_ADDRESS)) {
             MACAddress = intent.getStringExtra(Devices.EXTRA_ADDRESS); // MAC address of the chosen device
             connectBluetooth();
         } else {
@@ -107,11 +111,21 @@ public class BluetoothConnection extends Service {
     }
 
     private void connectBluetooth() {
-        if(MACAddress != null && !MACAddress.equals("") && MACAddress.length() == 17) { // Valid MACAddress
+        if (MACAddress != null && !MACAddress.equals("") && MACAddress.length() == 17) { // Valid MACAddress
             if (bluetoothSocket == null) { // If socket is not taken or device not connected
                 bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
                 try {
+                    if (ActivityCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+                        // TODO: Consider calling
+                        //    ActivityCompat#requestPermissions
+                        // here to request the missing permissions, and then overriding
+                        //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                        //                                          int[] grantResults)
+                        // to handle the case where the user grants the permission. See the documentation
+                        // for ActivityCompat#requestPermissions for more details.
+                        return;
+                    }
                     bluetoothSocket = bluetoothAdapter.getRemoteDevice(MACAddress).createInsecureRfcommSocketToServiceRecord(BTMODULEUUID); // This connection is not secure (mitm attacks)
                     bluetoothSocket.connect();
                 } catch (IOException e) {

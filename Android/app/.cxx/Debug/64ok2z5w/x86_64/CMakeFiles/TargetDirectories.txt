@@ -1,0 +1,3 @@
+C:/Arduino_uno_android/ArduinoRobotAndroidBluetoothController/Android/app/.cxx/Debug/64ok2z5w/x86_64/CMakeFiles/robocar.dir
+C:/Arduino_uno_android/ArduinoRobotAndroidBluetoothController/Android/app/.cxx/Debug/64ok2z5w/x86_64/CMakeFiles/edit_cache.dir
+C:/Arduino_uno_android/ArduinoRobotAndroidBluetoothController/Android/app/.cxx/Debug/64ok2z5w/x86_64/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,23 @@
+                    Executable : C:\Android\Sdk\cmake\3.22.1\bin\cmake.exe
+arguments : 
+-HC:\Arduino_uno_android\ArduinoRobotAndroidBluetoothController\Android\app\src\main\cpp
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=19
+-DANDROID_PLATFORM=android-19
+-DANDROID_ABI=armeabi-v7a
+-DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a
+-DANDROID_NDK=C:\Android\Sdk\ndk\21.4.7075529
+-DCMAKE_ANDROID_NDK=C:\Android\Sdk\ndk\21.4.7075529
+-DCMAKE_TOOLCHAIN_FILE=C:\Android\Sdk\ndk\21.4.7075529\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=C:\Android\Sdk\cmake\3.22.1\bin\ninja.exe
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Arduino_uno_android\ArduinoRobotAndroidBluetoothController\Android\app\build\intermediates\cxx\Debug\64ok2z5w\obj\armeabi-v7a
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=C:\Arduino_uno_android\ArduinoRobotAndroidBluetoothController\Android\app\build\intermediates\cxx\Debug\64ok2z5w\obj\armeabi-v7a
+-DCMAKE_BUILD_TYPE=Debug
+-BC:\Arduino_uno_android\ArduinoRobotAndroidBluetoothController\Android\app\.cxx\Debug\64ok2z5w\armeabi-v7a
+-GNinja
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 2

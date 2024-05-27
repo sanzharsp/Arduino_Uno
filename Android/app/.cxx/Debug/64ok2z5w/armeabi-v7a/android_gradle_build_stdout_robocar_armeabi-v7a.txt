@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Arduino_uno_android\ArduinoRobotAndroidBluetoothController\Android\app\.cxx\Debug\64ok2z5w\armeabi-v7a'
+ninja: no work to do.
